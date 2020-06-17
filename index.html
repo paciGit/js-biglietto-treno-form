@@ -4,11 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <title>TrainTicket</title>
   </head>
   <body>
 
+    <!-- Contenitore totale -->
     <div class="containter_flex">
+
+      <!-- Sezione Input per utente -->
       <section id="input">
         <h1 class="title">Calcola il prezzo del tuo biglietto</h1>
 
@@ -32,7 +36,6 @@
                     </select>
                 </div>
             </div>
-
             <div>
                 <button class="btn" id="btnGenera">Genera</button>
                 <button class="btn" id="btnAnnulla">Annulla</button>
@@ -40,6 +43,7 @@
         </div>
       </section>
 
+      <!-- Sezione biglietto "Show or Hidden" -->
       <section id="biglietto" class="hidden">
           <h2 class="title">Il tuo biglietto</h2>
 
@@ -77,7 +81,6 @@
               </div>
       </section>
     </div>
-
 
     <script type="text/javascript" src="js/script.js"> </script>
   </body>
