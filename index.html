@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>TrainTicket</title>
+  </head>
+  <body>
+
+    <div class="containter_flex">
+      <section id="input">
+        <h1 class="title">Calcola il prezzo del tuo biglietto</h1>
+
+        <div class="dati_tot">
+            <div>
+                <div class="row">
+                    <label for="nome">Nome e Cognome</label>
+                    <input id="nome" type="text" name="nome" placeholder="Inserisci il tuo nome">
+                </div>
+                <div class="row">
+                    <label for="km">Km da percorrere</label>
+                    <input id="km" type="number" name="km" placeholder="Inserisci i Km da percorrere">
+                </div>
+                <div class="row">
+                    <label for="eta">Fascia d'età</label>
+                    <select name="eta" id="eta">
+                        <option id="reset" value=""></option>
+                        <option value="minorenne">Minorenne</option>
+                        <option value="maggiorenne">Maggiorenne</option>
+                        <option value="over65">Over 65</option>
+                    </select>
+                </div>
+            </div>
+
+            <div>
+                <button class="btn" id="btnGenera">Genera</button>
+                <button class="btn" id="btnAnnulla">Annulla</button>
+            </div>
+        </div>
+      </section>
+
+      <section id="biglietto" class="hidden">
+          <h2 class="title">Il tuo biglietto</h2>
+
+              <div class="nome">
+                  <h3>Nome Passeggero</h3>
+                  <h3 id="nome_pass"></h3>
+              </div>
+              <div class="offerta">
+                  <table>
+                      <thead>
+                          <tr>
+                              <th>Offerta</th>
+                              <th>N. Carrozza</th>
+                              <th>Codice CT</th>
+                              <th>Costo</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <td>
+                                  <span id="offerta_appl"></span>
+                              </td>
+                              <td>
+                                  <span id="carrozza"></span>
+                              </td>
+                              <td>
+                                  <span id="codice_ct"></span>
+                              </td>
+                              <td>
+                                  <span id="costo"></span>
+                              </td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+      </section>
+    </div>
+
+
+    <script type="text/javascript" src="js/script.js"> </script>
+  </body>
+</html>
